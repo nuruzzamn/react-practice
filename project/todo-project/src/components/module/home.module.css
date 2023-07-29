@@ -1,0 +1,24 @@
+.container{
+    background-color: rgb(51, 17, 17);
+    flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+    .todos {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .todos {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .todos {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }

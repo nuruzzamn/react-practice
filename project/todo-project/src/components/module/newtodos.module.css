@@ -1,0 +1,62 @@
+.form {
+    width: 50%;
+    background-color: rgb(82, 20, 20);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-feild {
+    margin: 1rem 0;
+    display: flex;
+}
+
+.form-feild label {
+    flex-basis: 20%;
+}
+
+.form-feild input {
+    flex-basis: 80%;
+    border: none;
+    border-radius: 0.6rem;
+    padding: 0.2rem;
+}
+
+.form-feild textarea {
+    flex-basis: 80%;
+    resize: none;
+    border: none;
+    border-radius: 0.6rem;
+    padding: 0.2rem;
+}
+
+.form button{
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    width: 50%  ;
+}
+
+.form button:hover{
+    background-color: orange;
+    color: white;
+}
+
+@media screen and (max-width: 992px) {
+    .todos {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .todos {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .todos {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}

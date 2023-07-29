@@ -1,0 +1,16 @@
+*{
+    margin: 10px;
+    padding: 5px;
+}
+
+h1{
+    color: red;
+    margin-left: 2px;
+}
+
+button{
+    width: 5rem;
+    background: blue;
+    color: white;
+
+}

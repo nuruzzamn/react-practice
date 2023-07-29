@@ -1,0 +1,24 @@
+.todos{
+    width: 50%;
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+    overflow: scroll;
+    height: 60vh;
+}
+
+@media screen and (max-width: 992px) {
+    .todos {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .todos {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .todos {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
