@@ -1,4 +1,4 @@
-export const faqData=[
+  export const faqData=[
     {
         id:1,
         title:"Make the FAQs easy to find.",
