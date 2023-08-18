@@ -15,7 +15,7 @@ const App = () => {
   
     fetch(url)
     .then((res)=>{
-      console.log('result data',res)
+      // console.log('result data',res)
 
       if (!res.ok){
         throw error("Finding error");
@@ -25,6 +25,8 @@ const App = () => {
     })
     .then((data)=>{
       setusers(data)
+
+      console.log("show data", data)
       setisloading(false)
       setError(null)
     })
