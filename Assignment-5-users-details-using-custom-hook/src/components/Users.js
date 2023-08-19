@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import User from './User';
 
-const Users = (props) => {
+const  Users = (props) => {
   return (
     <section className="users">
       {props.users.map((user) => (
