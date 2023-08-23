@@ -1,19 +1,32 @@
-import React from 'react'
+import "../index.css";
+import { UserCustomContext } from "../../context/UserCustomContext";
 
-const User = ({userData}) => {
-    const {id, name}= userData;
+const User = ({ users }) => {
+  const { userData, setUserData } = UserCustomContext();
 
-    console.log("User data",userData)
+  const { id, name } = users;
+
+  const UserDelete = (id) => {
+    const filter = userData.filter((user) => user.id !== id);
+    setUserData(filter);
+  };
+
   return (
     <>
-    <article>
+      <article className="container">
         <h1>Name : {name}</h1>
         <p>ID : {id}</p>
 
-    </article>
-        
+        <button
+          onClick={() => {
+            UserDelete(id);
+          }}
+        >
+          Delete
+        </button>
+      </article>
     </>
-  )
-}
+  );
+};
 
-export default User
+export default User;

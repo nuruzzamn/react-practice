@@ -1,19 +1,19 @@
-import React from 'react'
-import User from './User'
+import User from "./User";
+import "../index.css";
+import { UserCustomContext } from "../../context/UserCustomContext";
 
-const Users = ({userData}) => {
+const Users = () => {
+  const { userData } = UserCustomContext();
 
-    // console.log("Users",userData)
   return (
     <>
-    <section>
-        {userData.map(user =>
-             <User key={user.id} userData={user}/>
-    )}
-    </section>
-       
+      <section className="users">
+        {userData.map((user) => (
+          <User key={user.id} users={user} />
+        ))}
+      </section>
     </>
-  )
-}
+  );
+};
 
-export default Users
+export default Users;
